@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>宝塚を観に行こう</title>
@@ -40,38 +41,42 @@
     <header>
         <nav>
             <ul>
-                <li>about</li>
-                <li>program</li>
-                <li>price</li>
-                <li>access</li>
-                <li>ticket</li>
-                <li>Q&amp;A</li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#program">program</a></li>
+                <li><a href="#price">price</a></li>
+                <li><a href="#access">access</a></li>
+                <li><a href="#ticket">ticket</a></li>
+                <li><a href="#qa">Q&amp;A</a></li>
             </ul>
         </nav>
+        <!--
            <div class="visual">
                 <div class="title-wrap">
                     <p class="title1">宝塚</p>
                     <p class="title2">を観に行こう</p>
                 </div>
-                <img src="images/topstar.png" alt="" width="500px">
-           </div>
+-->
+        <div class="logo">
+            <img src="images/goto_hero.png" alt="" width="700px">
+        </div>
+        <!--           </div>-->
     </header>
     <section id="about">
         <h4>about</h4>
         <h2>宝塚ってこんなとこ</h2>
         <div class="about-content-wrap">
             <div class="about-content">
-               <img src="images/about1.png" alt="">
+                <img src="images/about1.png" alt="">
                 <h6>女性だけで構成</h6>
                 <p>宝塚の劇団員は全員女性で構成されており、男性の役を行う「男役」と女性の役を行う「娘役」に分かれています。男役はそうすればカッコよく見えるのかを日々研究しているため本物の男性よりもカッコいいと言われるほどです。</p>
             </div>
             <div class="about-content">
-               <img src="images/about2.png" alt="">
+                <img src="images/about2.png" alt="">
                 <h6>組み分け</h6>
                 <p>宝塚では劇団員が花・月・雪・星・宙の5つの組と専科に組み分けされます。花組はダンス、月組は芝居、雪組は日本物、星組はエネルギッシュさ、宙組はモダンさが特徴となっています。また、専科は芝居や歌に秀でた劇団員が色々な組から集まった舞台のスペシャリスト集団です。各組の公演に出演し、舞台に厚みを加えてくれます。</p>
             </div>
             <div class="about-content">
-               <img src="images/about3.png" alt="">
+                <img src="images/about3.png" alt="">
                 <h6>公演は組ごと</h6>
                 <p>公演は各組ごとに行われます。組ごとにトップスターとトップ娘役のトップコンビが存在し、トップコンビに合わせた演目が上演されます。また、公演は2部構成となっており、1部と2部を通して同じ作品をする場合と1部はお芝居をし2部でショーを行う場合の2パターンがあります。</p>
             </div>
@@ -80,107 +85,136 @@
     <section id="program">
         <h4>program</h4>
         <h2>古典から漫画まで</h2>
-        <p>固い作品が上演されているイメージですが漫画やゲームが原作となっているユーモアたっぷりな作品もたくさんあります！</p>
-        <div>
-           <img src="images/オスカル.png" alt="">
-            <p class="program-title">1.ベルサイユのばら</p>
-        </div>
-        <div>
-            <p class="program-title">2.JIN -仁- </p>
-            <img src="images/JIN.png" alt="">
-        </div>
-        <div>
-           <img src="images/花より男子.png" alt="">
-            <p class="program-title">3.花より男子</p>
+        <div class="program-box">
+            <p class="program-intro">固い作品が上演されているイメージですが漫画やゲームが原作となっているユーモアたっぷりな作品もたくさんあります！</p>
+            <div class="program-content-wrap">
+                <div class="program-content">
+                    <img src="images/オスカル.png" alt="">
+                    <div class="right-p">
+                        <p class="program-title">1.ベルサイユのばら</p>
+                    </div>
+                </div>
+                <div class="program-content">
+                    <div class="left-p">
+                        <p class="program-title">2.JIN -仁- </p>
+                    </div>
+                    <img src="images/JIN.png" alt="">
+                </div>
+                <div class="program-content">
+                    <img src="images/花より男子.png" alt="">
+                    <div class="right-p">
+                        <p class="program-title">3.花より男子</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="price">
+      <div class="hexagon-wrap">
+       <div class="hexagon">
         <h4>price</h4>
         <h2>3500円から！学割ならもっと安く</h2>
-        <p>B 席なら3500円から観ることができます。また、長期休みの時には学割が適用される公演もあり、立ち見だと1000円、当日B席だと2000円で観ることができます。</p>
-        <p id="tab-control">
-            <a href="#tab1">宝塚大劇場</a>
-            <a href="#tab2">東京宝塚劇場</a>
-        </p>
-        <div id="tab-body">
-            <div id="tab1">タブ1の中身</div>
-            <div id="tab2">タブ2の中身</div>
+        <p class="price-intro">B 席なら3500円から観ることができます。また、長期休みの時には学割が適用される公演もあり、立ち見だと1000円、当日B席だと2000円で観ることができます。</p>
+            <div class="tab-all">
+                <div class="tab-wrap">
+                    <p id="tab-control">
+                        <a href="#tab1">宝塚大劇場</a>
+                        <a href="#tab2">東京宝塚劇場</a>
+                    </p>
+                    <div id="tab-body">
+                        <div id="tab1">
+                            <img src="images/takarazuka_seat.png" width="280">
+                        </div>
+                        <div id="tab2">
+                            <img src="images/tokyo_seat.png" alt="" width="280">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
     <section id="access">
         <h4>access</h4>
         <h2>基本は兵庫と東京！全国各地でも観れる</h2>
-        <p>専用劇場は兵庫・宝塚と東京・有楽町の2ヶ所にあります。また、専用劇場以外にも名古屋や博多などで不定期に上演しているので全国各地で観ることが出来ます。</p>
+        <p class="access-intro">専用劇場は兵庫・宝塚と東京・有楽町の2ヶ所にあります。また、専用劇場以外にも名古屋や博多などで不定期に上演しているので全国各地で観ることが出来ます。</p>
         <div>
         </div>
-        <div class="access-fukidashi">
-            専用劇場
-        </div>
-        <div class="access-content">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.948941374501!2d135.346246!3d34.8072264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f4680a3ab805%3A0x56f8dd96c4eb5b3!2z5a6d5aGa5aSn5YqH5aC0!5e0!3m2!1sja!2sjp!4v1615519037721!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <div>
-                <p>宝塚大劇場</p>
-                <hr width="400">
-                <p>〒665-8558<br>
-                    兵庫県宝塚市栄町１丁目１−５７</p>
+        <div class="access-senyou-wrap">
+            <div class="access-senyou">
+                <div class="access-fukidashi">
+                    専用劇場
+                </div>
+                <div class="access-content">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.948941374501!2d135.346246!3d34.8072264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f4680a3ab805%3A0x56f8dd96c4eb5b3!2z5a6d5aGa5aSn5YqH5aC0!5e0!3m2!1sja!2sjp!4v1615519037721!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div>
+                        <p class="access-name">宝塚大劇場</p>
+                        <hr width="130">
+                        <p>〒665-8558<br>
+                            兵庫県宝塚市栄町１丁目１−５７</p>
+                    </div>
+                </div>
+                <div class="access-content">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12964.69121733388!2d139.75046131745904!3d35.67274681461781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f264a02131d9%3A0x11e1c7136adc0c35!2z5p2x5Lqs5a6d5aGa5YqH5aC0!5e0!3m2!1sja!2sjp!4v1615521330194!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div>
+                        <p class="access-name">東京宝塚劇場</p>
+                        <hr width="140">
+                        <p>〒100-0006<br>
+                            東京都千代田区有楽町１丁目１−３<br>
+                            東京宝塚ビル内</p>
+                    </div>
+                </div>
+                <div class="access-fukidashi">
+                    その他劇場
+                </div>
             </div>
         </div>
-        <div class="access-content">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12964.69121733388!2d139.75046131745904!3d35.67274681461781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f264a02131d9%3A0x11e1c7136adc0c35!2z5p2x5Lqs5a6d5aGa5YqH5aC0!5e0!3m2!1sja!2sjp!4v1615521330194!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <div>
-                <p>東京宝塚劇場</p>
-                <hr width="400">
-                <p>〒100-0006<br>
-                    東京都千代田区有楽町１丁目１−３<br>
-                    東京宝塚ビル内</p>
+        <div class="access-sonota-flex">
+            <div class="access-sonota-wrap">
+                <p class="access-sonota">博多座（福岡）</p>
+                <p class="access-sonota">御園座（愛知）</p>
+                <p class="access-sonota">KAAT神奈川芸術劇場（神奈川）　etc...</p>
             </div>
         </div>
-        <div class="access-fukidashi">
-            その他劇場
-        </div>
-        <div class="access-sonota-wrap">
-            <p class="access-sonota">博多座（福岡）</p>
-            <p class="access-sonota">御園座（愛知）</p>
-            <p class="access-sonota">KAAT神奈川芸術劇場（神奈川）</p>
-        </div>
-        <p>etc...</p>
     </section>
     <section id="schedule">
         <h4>schedule</h4>
         <h2>ほぼ毎日上演</h2>
-        <p>宝塚は週1の休演日と公演が変わる間の約1ヶ月以外は毎日上演しています。宝塚大劇場は毎週水曜、東京大劇場は毎週月曜日が休演日になっています。</p>
-        <p class="schedule-watch">今は何が観れるの？</p>
+        <p class="schdule-intro">宝塚は週1の休演日と公演が変わる間の約1ヶ月以外は毎日上演しています。宝塚大劇場は毎週水曜、東京大劇場は毎週月曜日が休演日になっています。</p>
+        <div class="schedule-watch-flex">
+            <p class="schedule-watch">今は何が観れるの？</p>
+        </div>
         <a href="https://kageki.hankyu.co.jp/revue/index.html">上演中の公演を知る</a>
     </section>
     <section id="ticket">
         <h4>ticket</h4>
         <h2>ネットで簡単に取れる</h2>
-        <p>チケットは宝塚の公式HPやぴあなどから簡単に買うことが出来ます。また、劇場に行ったり電話して買うことも出来ます。</p>
+        <p class="ticket-intro">チケットは宝塚の公式HPやぴあなどから簡単に買うことが出来ます。また、劇場に行ったり電話して買うことも出来ます。</p>
         <div class="ticket-way-wrap">
             <div class="ticket-way">
                 <p class="ticket-title">チケットサイト</p>
                 <div class="ticket-content">
                     <p>宝塚歌劇Webチケットサービス</p>
-                    <hr>
+                    <hr width="230" class="ticket-net-name">
                     <p>ローチケ</p>
-                    <hr>
+                    <hr width="70" class="ticket-net-name">
                     <p>ぴあ</p>
-                    <hr>
+                    <hr width="40" class="ticket-net-name">
                 </div>
             </div>
             <div class="ticket-way">
                 <p class="ticket-title">電話予約</p>
-                <div>
-                    <p>宝塚大劇場</p>
-                    <hr>
-                    <p>TEL: 0570-00-5100<br>
-                        10:00〜18:00 /水曜定休</p>
+                <div class="ticket-takarazuka">
+                    <p class="ticket-call-name">宝塚大劇場</p>
+                    <hr width="90">
+                    <p>TEL: 0570-00-5100</p>
+                    <p class="ticket-call-holiday">10:00〜18:00 /水曜定休</p>
                 </div>
                 <div>
-                    <p>東京宝塚劇場</p>
-                    <hr>
-                    <p>TEL: 0570-02-9962<br>
-                        10:00〜18:00 /水曜定休</p>
+                    <p class="ticket-call-name">東京宝塚劇場</p>
+                    <hr width="100">
+                    <p>TEL: 0570-02-9962</p>
+                    <p class="ticket-call-holiday">10:00〜18:00 /水曜定休</p>
                 </div>
             </div>
         </div>
@@ -189,32 +223,32 @@
         <h2>Q&amp;A</h2>
         <div class="qa-content">
             <div class="qa-content-q">
-                <p>Q</p>
-                <p>観劇の時は何を持って行ったらいいの？</p>
+                <p class="qa-q">Q</p>
+                <p class="qa-content-p">観劇の時は何を持って行ったらいいの？</p>
             </div>
             <div class="qa-content-a">
-                <p>A</p>
-                <p>チケット、ハンカチ、双眼鏡の3つを持っていきましょう。双眼鏡は無くても大丈夫ですが、持っていくとタカラジェンヌの細かい表情や仕草を見ることが出来ます。ちなみに劇場で500円で借りることも出来ます。</p>
+                <p class="qa-a">A</p>
+                <p class="qa-content-p">チケット、ハンカチ、双眼鏡の3つを持っていきましょう。双眼鏡は無くても大丈夫ですが、持っていくとタカラジェンヌの細かい表情や仕草を見ることが出来ます。ちなみに劇場で500円で借りることも出来ます。</p>
             </div>
         </div>
         <div class="qa-content">
             <div class="qa-content-q">
-                <p>Q</p>
-                <p>どんな服装で観に行けばいいの？</p>
+                <p class="qa-q">Q</p>
+                <p class="qa-content-p">どんな服装で観に行けばいいの？</p>
             </div>
             <div class="qa-content-a">
-                <p>A</p>
-                <p>ドレスコードはないのでカジュアルな格好で観に行って大丈夫です。自分の気分をあげるためにワンピースなど綺麗めな格好をするのもおすすめです。</p>
+                <p class="qa-a">A</p>
+                <p class="qa-content-p">ドレスコードはないのでカジュアルな格好で観に行って大丈夫です。自分の気分をあげるためにワンピースなど綺麗めな格好をするのもおすすめです。</p>
             </div>
         </div>
         <div class="qa-content">
             <div class="qa-content-q">
-                <p>Q</p>
-                <p>入り待ち・出待ちはしてもいいの？</p>
+                <p class="qa-q">Q</p>
+                <p class="qa-content-p">入り待ち・出待ちはしてもいいの？</p>
             </div>
             <div class="qa-content-a">
-                <p>A</p>
-                <p>誰でも出来ますがファンクラブに入っている場合と入っていない場合では入り待ち・出待ちの方法が異なります。ファンクラブに入ってない場合、宝塚大劇場では楽屋入り口近くの通路（花のみちと呼ばれる）で、東京宝塚劇場ではファンクラブの後ろで行います。また、写真撮影可能ですが撮影されるタカラジェンヌ、通行人、近隣住人への配慮を心がけましょう。</p>
+                <p class="qa-a">A</p>
+                <p class="qa-content-p">誰でも出来ますがファンクラブに入っている場合と入っていない場合では入り待ち・出待ちの方法が異なります。ファンクラブに入ってない場合、宝塚大劇場では楽屋入り口近くの通路（花のみちと呼ばれる）で、東京宝塚劇場ではファンクラブの後ろで行います。また、写真撮影可能ですが撮影されるタカラジェンヌ、通行人、近隣住人への配慮を心がけましょう。</p>
             </div>
         </div>
     </section>

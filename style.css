@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: dnp-shuei-mgothic-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h4 {
+    font-family: 'Snell Roundhand', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2 {
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+h6 {
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+
+
+header {
+    background-image: url("images/hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title1 {
+    font-family: ta-rb, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+}
+
+.title2 {
+    font-family: dnp-shuei-mgothic-std, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+}
+
+nav {
+    background-color: #fffafa;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    padding: 20px 20px 20px 0px;
+    font-family: jaf-domus-titling-web, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+#about {
+    width: 100%;
+    background-color: #fffafa;
+}
+
+.about-content-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 300px;
+}
+
+#program {
+    background-color: #ffc7c7;
+    width: 100%;
+
+}
+
+#program h4 {
+    color: #fffafa;
+}
+
+#program p {
+    color: #fffafa;
+}
+
+#program h2 {
+    color: #fffafa;
+}
+
+.program-title {
+    font-weight: 700;
+    background-color: #ffe2e2;
+}
+
+#tab-control a {
+    display: inline-block;
+    /* インラインブロック化 */
+    border-width: 1px 1px 0px 1px;
+    /* 下以外の枠線を引く */
+    border-style: solid;
+    /* 枠線の種類：実線 */
+    border-color: black;
+    /* 枠線の色：黒色 */
+    border-radius: 0.75em 0.75em 0 0;
+    /* 枠線の左上角と右上角だけを丸く */
+    padding: 0.75em 1em;
+    /* 内側の余白 */
+    text-decoration: none;
+    /* リンクの下線を消す */
+    color: black;
+    /* 文字色：黒色 */
+    background-color: white;
+    /* 背景色：白色 */
+    font-weight: bold;
+    /* 太字 */
+    position: relative;
+}
+
+#tab-control a:hover {
+    text-decoration: underline;
+}
+
+#tab-body div {
+    border: 1px solid black;
+    /* 枠線：黒色の実線を1pxの太さで引く */
+    margin-top: -1px;
+    /* 上側にあるタブと1pxだけ重ねるために「-1px」を指定 */
+    padding: 1em;
+    /* 内側の余白量 */
+    background-color: white;
+    /* 背景色：白色 */
+    position: relative;
+    /* z-indexを調整するために必要 */
+    z-index: 0;
+    /* 重なり順序を「最も背面」にするため */
+}
+
+.access-fukidashi {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 15px 1.5em 0;
+    padding: 0 5px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background: #a58eff;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.access-fukidashi:before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-left: 15px solid #a58eff;
+    z-index: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.access-content {
+    display: flex;
+}
+
+hr {
+    border: 0;
+    height: 16px;
+    background: repeating-linear-gradient(90deg, #ffe2e2, #ffe2e2 1px, rgba(0 0 0 / 0) 1px, rgba(0 0 0 / 0) 4px);
+}
+
+.access-sonota {
+    display: inline-block;
+    border-right: 5px solid #ffe2e2;
+}
+
+.access-sonota:last-child {
+    border-right: 0;
+}
+
+#schedule a {
+    display: block;
+    background-color: #ffc7c7;
+    color: #fffafa;
+    text-decoration: none;
+}
+
+.schedule-watch::before,
+.schedule-watch::after {
+    content: "";
+    width: 60px;
+    height: 5px;
+    background: #000;
+}
+
+.schedule-watch::before {
+    transform: rotate(60deg);
+}
+
+.schedule-watch::after {
+    transform: rotate(-60deg);
+}
+
+.ticket-title {
+    font-weight: 700;
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #FFF;
+    font-weight: bold;
+}
+
+.ticket-way-wrap {
+    display: flex;
+}
+
+.ticket-way {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px;
+/*    border-radius: 8px;*/
+}
+
+#ticket hr {
+    height: 2px;
+    background: repeating-linear-gradient(90deg, #ffe2e2, #ffe2e2 4px, rgba(0 0 0 / 0) 4px, rgba(0 0 0 / 0) 7px);
+}
+
+#qa{
+    background-color: #ffc7c7;
+}
+
+#qa h2{
+    color: #fffafa;
+}
+
+#qa p{
+    color: #fffafa;
+}
+
+.qa-content-q {
+    display: flex;
+}
+
+.qa-content-a {
+    display: flex;
+}

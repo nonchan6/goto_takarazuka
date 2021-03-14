@@ -330,7 +330,7 @@ header a {
     padding-top: 150px;
     padding-bottom: 200px;
     background-image: url(images/access-haikei.png);
-/*
+    /*
     background-size: cover;
     background-repeat: no-repeat;
 */
@@ -628,4 +628,117 @@ hr {
     height: 32px;
     padding: 0px 10.5px;
     margin-right: 10px;
+}
+
+@media screen and (max-width:479px) {
+    li {
+    padding: 20px 2px 20px 0px;
+}
+    
+    header img {
+        width: 100%;
+    }
+
+    .about-content-wrap {
+        flex-direction: column;
+    }
+
+    .about-content-wrap p {
+        padding-bottom: 70px;
+    }
+
+    .program-box {
+        border: none;
+    }
+
+    #program h2 {
+        position: relative;
+    }
+
+    .program-content {
+        flex-direction: column;
+    }
+    
+    #program img {
+    width: 90%;
+}
+
+    .program-intro {
+        width: 80%;
+    }
+
+    .jin {
+        flex-direction: column-reverse;
+    }
+
+    .program-title {
+        margin-top: 20px;
+    }
+
+    .hexagon::before,
+    .hexagon::after {
+        display: none;
+    }
+
+    .hexagon {
+        background-color: transparent;
+        width: 90%;
+        height: 100%;
+    }
+
+    #tab-body div {
+        border: 1px solid black;
+        /* 枠線：黒色の実線を1pxの太さで引く */
+        margin-top: -1px;
+        width: 300px;
+        /* 上側にあるタブと1pxだけ重ねるために「-1px」を指定 */
+        padding: 1em;
+        /* 内側の余白量 */
+        background-color: white;
+        /* 背景色：白色 */
+        position: relative;
+        /* z-indexを調整するために必要 */
+        z-index: 0;
+        /* 重なり順序を「最も背面」にするため */
+    }
+
+    #tab1 img {
+        margin-left: 10px;
+    }
+
+    #tab2 img {
+        margin-left: 10px;
+    }
+    
+    .access-content {
+    flex-direction: column;
+}
+    .access-intro {
+    width: 80%;
+}
+    
+    .schdule-intro {
+        width: 80%;
+    }
+    
+    .ticket-intro{
+        width: 80%;
+    }
+    
+    .ticket-way-wrap {
+    flex-direction: column;
+}
+
+    .program-box {
+    width: 90%;
+    margin: 0 auto;
+}
+    .qa-content {
+    width: 80%;
+}
+    .left-p {
+        width: 90%;
+    }
+
+
 }

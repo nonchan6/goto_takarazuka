@@ -114,6 +114,11 @@ header a {
     background-color: #fffafa;
 }
 
+#about h6 {
+    font-size: 20px;
+    padding: 15px 0 1px;
+}
+
 
 .about-content-wrap {
     display: flex;
@@ -581,6 +586,11 @@ hr {
     margin-bottom: 20px;
 }
 
+.ticket-content a {
+    text-decoration: none;
+    color: #000;
+}
+
 #ticket hr {
     height: 2px;
     background: repeating-linear-gradient(90deg, #ffe2e2, #ffe2e2 4px, rgba(0 0 0 / 0) 4px, rgba(0 0 0 / 0) 7px);
@@ -631,16 +641,28 @@ hr {
 }
 
 @media screen and (max-width:479px) {
-    li {
-    padding: 20px 2px 20px 0px;
-}
     
+    li {
+        padding: 20px 2px 20px 0px;
+    }
+
     header img {
         width: 100%;
     }
 
     .about-content-wrap {
         flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .about-content {
+        margin-right: 0;
+    }
+
+    .about-content img {
+        width: 100%;
     }
 
     .about-content-wrap p {
@@ -649,22 +671,30 @@ hr {
 
     .program-box {
         border: none;
+        width: 100%;
+        margin: 0 auto;
     }
 
     #program h2 {
         position: relative;
     }
 
+    .program-content-wrap {
+        margin-top: 0px;
+    }
+
     .program-content {
         flex-direction: column;
+        align-items: center;
     }
-    
+
     #program img {
-    width: 90%;
-}
+        width: 90%;
+    }
 
     .program-intro {
-        width: 80%;
+        width: 90%;
+        margin: 0px auto;
     }
 
     .jin {
@@ -672,8 +702,35 @@ hr {
     }
 
     .program-title {
-        margin-top: 20px;
+        margin: 10px auto;
     }
+
+    .right-p {
+        width: 100%;
+    }
+
+    .left-p {
+        width: 100%;
+    }
+
+    .left-p p {
+        margin: 10px auto;
+    }
+
+    #price {
+        padding-top: 10px;
+    }
+    
+    #price h2 {
+        width: 80%;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    #price h4 {
+        margin-top: 40px;
+    }
+
 
     .hexagon::before,
     .hexagon::after {
@@ -710,33 +767,88 @@ hr {
         margin-left: 10px;
     }
     
+    #access h2 {
+        width: 80%;
+        text-align: left;
+        margin: 0 auto;
+    }
+
     .access-content {
-    flex-direction: column;
-}
+        flex-direction: column;
+        align-items: center;
+    }
+
     .access-intro {
-    width: 80%;
-}
-    
+        width: 90%;
+    }
+
+    .access-senyou {
+        align-items: center;
+    }
+
+    .access-fukidashi:before {
+        bottom: -15px;
+        right: 45px;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .access-fukidashi:after {
+        right: 45px;
+        bottom: -10px;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+
+    #access iframe {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .access-name {
+        padding-top: 10px;
+    }
+
+    .access-sonota-wrap {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .access-sonota {
+        display: block;
+        border-right: none;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    #schedule {
+        padding-bottom: 300px;
+    }
+
+
     .schdule-intro {
         width: 80%;
     }
-    
-    .ticket-intro{
+
+    .ticket-intro {
         width: 80%;
     }
     
-    .ticket-way-wrap {
-    flex-direction: column;
-}
+    .ticket-way {
+        margin-bottom: 50px;
+    }
 
-    .program-box {
-    width: 90%;
-    margin: 0 auto;
-}
+    .ticket-way p {
+        font-size: 15px;
+    }
+
+    .ticket-way-wrap {
+        flex-direction: column;
+        padding-bottom: 300px;
+    }
+
     .qa-content {
-    width: 80%;
-}
-    .left-p {
         width: 90%;
     }
 
